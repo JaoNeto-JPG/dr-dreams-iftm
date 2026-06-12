@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Formulário de contato da Dr.Dreams para encomendas e dúvidas." />
+    <meta name="author" content="Dr.Dreams" />
+    <title>Dr.Dreams — Contato</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- Cabeçalho com menu de navegação -->
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">Dr.Dreams</a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+          <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+          <li><a href="contato.html" class="nav-link active">Contato</a></li>
+          <li><a href="localizacao.html" class="nav-link">Localização</a></li>
+          <li><a href="efeitos.html" class="nav-link">Efeitos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="pagina-contato">
+
+      <!-- Título da página -->
+      <section class="secao-titulo">
+        <div class="titulo-principal">
+          <p class="section-tag">Contato</p>
+          <h1 class="titulo-grande">Vamos<br />conversar</h1>
+        </div>
+        <div class="caixa caixa-clara texto-intro">
+          <p>Preencha o formulário abaixo ou fale conosco pelo <a href="https://instagram.com/dr.dreams" target="_blank">@dr.dreams</a>.</p>
+        </div>
+      </section>
+
+      <!-- Formulário de contato -->
+      <section class="secao-formulario">
+        <div class="conteudo-formulario caixa caixa-clara">
+
+          <h2 class="titulo-formulario">Formulário de Encomenda</h2>
+
+          <!-- action = página que recebe os dados | method = post envia de forma segura -->
+          <form id="formulario-contato" action="#" method="post">
+
+            <!-- Campo de texto: nome -->
+            <div class="grupo-campo">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" class="input-padrao" />
+            </div>
+
+            <!-- Campo de texto: e-mail -->
+            <div class="grupo-campo">
+              <label for="email">E-mail</label>
+              <input type="text" id="email" name="email" class="input-padrao" />
+            </div>
+
+            <!-- Campo de senha: caracteres ficam ocultos -->
+            <div class="grupo-campo">
+              <label for="senha">Senha de acesso (exemplo)</label>
+              <input type="password" id="senha" name="senha" class="input-padrao" />
+            </div>
+
+            <!-- Botões de rádio: só uma opção por vez (mesmo name) -->
+            <fieldset class="grupo-campo">
+              <legend>Tipo de contato</legend>
+
+              <label for="tipo-encomenda">
+                <input type="radio" id="tipo-encomenda" name="tipo-contato" value="encomenda" />
+                Encomenda
+              </label>
+
+              <label for="tipo-duvida">
+                <input type="radio" id="tipo-duvida" name="tipo-contato" value="duvida" />
+                Dúvida
+              </label>
+
+              <label for="tipo-parceria">
+                <input type="radio" id="tipo-parceria" name="tipo-contato" value="parceria" />
+                Parceria
+              </label>
+            </fieldset>
+
+            <!-- Checkboxes: pode marcar mais de uma -->
+            <fieldset class="grupo-campo">
+              <legend>Estilos de interesse</legend>
+
+              <label for="estilo-cybercore">
+                <input type="checkbox" id="estilo-cybercore" name="estilo" value="cybercore" />
+                Cybercore
+              </label>
+
+              <label for="estilo-blackwork">
+                <input type="checkbox" id="estilo-blackwork" name="estilo" value="blackwork" />
+                Blackwork
+              </label>
+
+              <label for="estilo-tribal">
+                <input type="checkbox" id="estilo-tribal" name="estilo" value="tribal" />
+                Cyber Tribal
+              </label>
+            </fieldset>
+
+            <!-- Upload de arquivo -->
+            <div class="grupo-campo">
+              <label for="referencia">Enviar referência visual</label>
+              <input type="file" id="referencia" name="referencia" />
+            </div>
+
+            <!-- Área de texto para mensagens longas -->
+            <div class="grupo-campo">
+              <label for="mensagem">Sua mensagem</label>
+              <textarea id="mensagem" name="mensagem" class="input-padrao" rows="6" cols="50"></textarea>
+            </div>
+
+            <!-- Botão que envia o formulário -->
+            <div class="grupo-campo">
+              <input type="submit" value="Enviar mensagem" class="botao-enviar" />
+            </div>
+
+          </form>
+
+        </div>
+      </section>
+
+      <!-- Perguntas frequentes -->
+      <section class="secao-faq">
+        <p class="section-tag">Perguntas Frequentes</p>
+
+        <article class="caixa caixa-escura item-faq">
+          <h2 class="faq-pergunta">Como faço uma encomenda?</h2>
+          <p class="faq-resposta">Entre em contato via Instagram DM. Conversamos sobre a peça, estilo e detalhes antes de iniciar.</p>
+        </article>
+
+        <article class="caixa caixa-escura item-faq">
+          <h2 class="faq-pergunta">As peças são únicas mesmo?</h2>
+          <p class="faq-resposta">Sim. Cada peça é 100% autoral e produzida uma única vez. Não existe reposição.</p>
+        </article>
+
+        <article class="caixa caixa-escura item-faq">
+          <h2 class="faq-pergunta">Qual o prazo de produção?</h2>
+          <p class="faq-resposta">Varia de acordo com a complexidade. Cada peça é artesanal e recebe o tempo que precisa.</p>
+        </article>
+
+        <article class="caixa caixa-escura item-faq">
+          <h2 class="faq-pergunta">Vocês fazem envio?</h2>
+          <p class="faq-resposta">Sim, enviamos para todo o Brasil. Detalhes combinados na conversa via Instagram.</p>
+        </article>
+      </section>
+
+      <!-- Chamada para ação -->
+      <section class="cta">
+        <div class="caixa caixa-clara caixa-centralizada">
+          <p class="section-tag">Acompanhe</p>
+          <h2 class="cta-title">Siga no Instagram</h2>
+          <a href="https://instagram.com/dr.dreams" target="_blank" class="cta-btn">@dr.dreams</a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <div class="footer-brand">
+        <h3 class="footer-logo">Dr.Dreams</h3>
+        <p class="footer-desc">Arte distópica em peças únicas. Cada criação carrega um universo que não se repete.</p>
+      </div>
+
+      <nav class="footer-nav">
+        <p class="footer-label">Navegação</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="localizacao.html">Localização</a></li>
+          <li><a href="efeitos.html">Efeitos</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-social">
+        <p class="footer-label">Social</p>
+        <a href="https://instagram.com/dr.dreams" target="_blank" class="footer-ig">Instagram ↗</a>
+      </div>
+
+      <p class="footer-copy">© 2026 Dr.Dreams. Todos os direitos reservados. — Uberaba, MG</p>
+    </footer>
+
+  </body>
+
+</html>

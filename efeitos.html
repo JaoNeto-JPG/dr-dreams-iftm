@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Demonstração de opacidade, sombras e filtros CSS da Dr.Dreams." />
+    <meta name="author" content="Dr.Dreams" />
+    <title>Dr.Dreams — Efeitos Visuais</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- Cabeçalho com menu dropdown -->
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">Dr.Dreams</a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+
+          <!-- Menu dropdown: submenu aparece ao passar o mouse -->
+          <li class="item-menu">
+            <a href="galeria.html" class="nav-link">Galeria ▾</a>
+            <ul class="submenu">
+              <li><a href="galeria.html">Ver peças</a></li>
+              <li><a href="efeitos.html">Efeitos visuais</a></li>
+            </ul>
+          </li>
+
+          <li><a href="contato.html" class="nav-link">Contato</a></li>
+          <li><a href="localizacao.html" class="nav-link">Localização</a></li>
+          <li><a href="efeitos.html" class="nav-link active">Efeitos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="pagina-efeitos">
+
+      <!-- Título com text-shadow -->
+      <section class="secao-titulo-efeitos">
+        <p class="section-tag">Opacidade e Sombra</p>
+        <h1 class="titulo-com-sombra">Efeitos Visuais</h1>
+        <p class="texto-efeitos">Técnicas de CSS3 aplicadas ao universo Dr.Dreams.</p>
+      </section>
+
+      <!-- Opacidade e RGBA -->
+      <section class="secao-opacidade">
+        <div class="conteudo-formulario">
+          <h2 class="subtitulo-efeitos">Opacidade</h2>
+          <p class="texto-efeitos">Passe o mouse sobre as peças — a opacidade muda com transition de 400ms.</p>
+
+          <div class="lista-pecas-opacas">
+            <article class="caixa peca-opaca">
+              <p class="peca-opaca-num">01</p>
+              <h3 class="peca-opaca-nome">Distopia I</h3>
+              <p class="peca-opaca-desc">opacity: 0.6 → 1.0 no hover</p>
+            </article>
+
+            <article class="caixa peca-opaca">
+              <p class="peca-opaca-num">02</p>
+              <h3 class="peca-opaca-nome">Contágio</h3>
+              <p class="peca-opaca-desc">Transição suave de 400ms</p>
+            </article>
+
+            <article class="caixa peca-opaca peca-rgba">
+              <p class="peca-opaca-num">03</p>
+              <h3 class="peca-opaca-nome">Sigilismo</h3>
+              <p class="peca-opaca-desc">Fundo com rgba — só a cor é transparente</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sombras em caixas -->
+      <section class="secao-sombras">
+        <div class="conteudo-formulario">
+          <h2 class="subtitulo-efeitos subtitulo-claro">Sombras (box-shadow)</h2>
+
+          <div class="lista-sombras">
+            <article class="caixa caixa-sombra-externa">
+              <h3 class="nome-sombra">Sombra externa</h3>
+              <p class="texto-efeitos">Deslocamento X, Y, blur e cor.</p>
+            </article>
+
+            <article class="caixa caixa-sombra-interna">
+              <h3 class="nome-sombra">Sombra interna</h3>
+              <p class="texto-efeitos">Usando o valor inset.</p>
+            </article>
+
+            <article class="caixa caixa-sombra-multipla">
+              <h3 class="nome-sombra">Sombras múltiplas</h3>
+              <p class="texto-efeitos">Várias sombras separadas por vírgula.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Filtros CSS -->
+      <section class="secao-filtros-css">
+        <div class="conteudo-formulario">
+          <h2 class="subtitulo-efeitos">Filtros CSS</h2>
+          <p class="texto-efeitos">Passe o mouse para ver blur, grayscale e brilho.</p>
+
+          <div class="lista-filtros">
+            <div class="imagem-demo filtro-blur">
+              <span>blur()</span>
+            </div>
+            <div class="imagem-demo filtro-cinza">
+              <span>grayscale()</span>
+            </div>
+            <div class="imagem-demo filtro-brilho">
+              <span>brightness()</span>
+            </div>
+            <div class="imagem-demo filtro-combinado">
+              <span>combinado</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <div class="footer-brand">
+        <h3 class="footer-logo">Dr.Dreams</h3>
+        <p class="footer-desc">Arte distópica em peças únicas. Cada criação carrega um universo que não se repete.</p>
+      </div>
+
+      <nav class="footer-nav">
+        <p class="footer-label">Navegação</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="localizacao.html">Localização</a></li>
+          <li><a href="efeitos.html">Efeitos</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-social">
+        <p class="footer-label">Social</p>
+        <a href="https://instagram.com/dr.dreams" target="_blank" class="footer-ig">Instagram ↗</a>
+      </div>
+
+      <p class="footer-copy">© 2026 Dr.Dreams. Todos os direitos reservados. — Uberaba, MG</p>
+    </footer>
+
+  </body>
+
+</html>
